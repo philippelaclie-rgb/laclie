@@ -10,6 +10,15 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="LACLIE">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script>
+(function(){
+  var standalone = window.navigator.standalone === true ||
+    (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches);
+  if (standalone) {
+    location.replace('https://script.google.com/macros/s/AKfycbz9iUMDGTxPkCYFb5y_IFHy_s-W30jQxVDlhfhaxmoEsJHnaBqX3k9ZnrliOBRQf8R_/exec');
+  }
+})();
+</script>
 <style>
   html,body{margin:0;min-height:100%;background:#2a1c14;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;color:#f4f1ea}
   .wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:24px;text-align:center;box-sizing:border-box}
@@ -21,17 +30,8 @@
 <body>
 <div class="wrap">
   <div class="brand">LACLIE</div>
-  <p class="hint" id="hint">Ajoutez cette page a l'ecran d'accueil (Partager -> Ajouter a l'ecran d'accueil) pour avoir l'icone LACLIE. Sinon, ouvrez directement l'application ci-dessous.</p>
+  <p class="hint">Ajoutez cette page a l'ecran d'accueil (Partager -> Ajouter a l'ecran d'accueil) pour avoir l'icone LACLIE. Sinon, ouvrez directement l'application ci-dessous.</p>
   <a class="btn" href="https://script.google.com/macros/s/AKfycbz9iUMDGTxPkCYFb5y_IFHy_s-W30jQxVDlhfhaxmoEsJHnaBqX3k9ZnrliOBRQf8R_/exec">Ouvrir l'application</a>
 </div>
-<script>
-(function(){
-  var standalone = window.navigator.standalone === true ||
-    (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches);
-  if (standalone) {
-    location.replace('https://script.google.com/macros/s/AKfycbz9iUMDGTxPkCYFb5y_IFHy_s-W30jQxVDlhfhaxmoEsJHnaBqX3k9ZnrliOBRQf8R_/exec');
-  }
-})();
-</script>
 </body>
 </html>
